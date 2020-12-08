@@ -1,0 +1,35 @@
+GET http://localhost:8888/api/getLinks HTTP/1.1
+content-type: application/json
+
+###
+
+PUT http://localhost:8888/api/updateLink HTTP/1.1
+content-type: application/json
+
+{
+  "_id": "284288980970635777",
+  "name": "JAMStack by JamesQQuick 7 July",
+  "url": "https://youtu.be/73b1ZbmB96I",
+  "description": "Learn about the JAMstack the new hotness in Web Development!! In this JAMstack crash course you'll learn how to build a Full Stack application using some amazing technologies like FaunaDB Netlify and React. We'll use Netlify Serverless Functions for the backend and FaunaDB for the database.",
+  "archived": false
+}
+
+###
+
+POST http://localhost:8888/api/createLink HTTP/1.1
+content-type: application/json
+
+{
+    "name": "James' website",
+    "url": "https://jamesqquick.com",
+    "description": "James personal website"
+}
+
+###
+
+DELETE http://localhost:8888/api/deleteLink HTTP/1.1
+content-type: application/json
+
+{
+  "id": "284354617895027207"
+}
